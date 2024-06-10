@@ -1,0 +1,13 @@
+:root{
+  --nav-background: #525AA0;
+  --nav-button:  #FFFFFF;
+  --nav-text: #FFFFFF;
+  --nav-shadow: #00000026;
+}
+*{
+  font-family: 'Roboto';
+}
+body{
+  margin: 0;
+  padding: 0;
+}

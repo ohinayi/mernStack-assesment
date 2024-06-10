@@ -1,0 +1,60 @@
+.toggle-switch {
+    display: flex;
+    position: relative;
+    width: 400px; /* Increased width */
+    margin: 20px auto; /* Centering the switch */
+  }
+  
+  .toggle-option {
+    padding: 15px 20px; /* Reduced padding for closer spacing */
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    background-color: #d3d3d3;
+    color: black;
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s, z-index 0.3s;
+    position: relative;
+    z-index: 1;
+    border-radius: 25px; /* Default border radius */
+  }
+  
+  
+  .toggle-option.active {
+    background-color: #c1f4c5;
+    color: black;
+    z-index: 2; /* Bring active element to the front */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow to emphasize elevation */
+  }
+  
+  .it-development.active {
+    border-top-left-radius: 25px; /* Curvy edge for the first option */
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px; /* Retain radius for better overlap illusion */
+    border-bottom-right-radius: 25px;
+    margin-right: -50px; /* Overlapping effect */
+  }
+  
+  .design-and-creative.active {
+    border-top-right-radius: 25px; /* Curvy edge for the second option */
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px; /* Retain radius for better overlap illusion */
+    border-bottom-left-radius: 25px;
+    margin-left: -50px; /* Overlapping effect */
+  }
+  
+  .it-development:not(.active) {
+    border-top-left-radius: 25px; /* Retain full radius when not active */
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    z-index: 0;
+  }
+  
+  .design-and-creative:not(.active) {
+    border-top-right-radius: 25px; /* Retain full radius when not active */
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    z-index: 0;
+  }
+  

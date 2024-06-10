@@ -1,0 +1,27 @@
+.section-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; 
+    flex-wrap: wrap; 
+    overflow: hidden; 
+}
+.union{
+    width: 100%;
+}
+.union image{
+    width: 100%;
+}
+section{
+    width: 100%;
+}
+.union::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -260px;
+    background: white;
+    transform: skewY(-2deg);
+    height: 60px;
+}

@@ -1,0 +1,167 @@
+.grove-container {
+    background: #202229;
+    height: fit-content;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 30px 30px 30px;
+    flex-wrap: wrap;
+}
+
+.grove-container::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -1350px;
+    background: #edefff;
+    transform: skewY(-2deg);
+    height: 110px;
+}
+
+.f-groove {
+    width: 50%;
+}
+
+.s-groove {
+    width: 50%;
+}
+
+.f-p-content {
+    width: 379px;
+    height: 192px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 64px;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.rVector {
+    border-radius: 100px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 56px;
+    height: 56px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.grove-t {
+    width: 461px;
+    height: 64px;
+    gap: 0px;
+    opacity: 0.8px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: rgb(172, 172, 172);
+}
+
+.grove-button {
+    width: 49.79px;
+    height: 49.79px;
+    padding: 0px 16.15px 0px 16.82px;
+    gap: 0px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    opacity: 0px;
+    background: #FFFFFF;
+}
+
+.b-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.sGrove-c {
+    width: 150px;
+    height: 150px;
+    gap: 0px;
+    border-radius: 100px;
+    opacity: 0px;
+    background: #AF7CFF;
+    overflow: hidden;
+
+}
+
+.sGrove-c img {
+    width: 80px;
+    opacity: 0px;
+    height: 20px;
+    padding: 65px 35px;
+}
+
+.grove-d {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.s-f-grove {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 200px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    line-height: 2px;
+}
+
+.jason {
+    width: 209px;
+    /* height: 44px; */
+    gap: 0px;
+    opacity: 0px;
+    font-size: 34px;
+    font-weight: 600;
+    /* line-height: 44px; */
+    text-align: left;
+
+}
+
+.eng {
+    width: 152px;
+    color: rgb(172, 172, 172);
+    gap: 0px;
+    opacity: 0.4px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+
+}
+
+.san {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(172, 172, 172);
+    text-align: left;
+    width: 104px;
+    gap: 0px;
+    opacity: 0.4px;
+
+}
+
+.grove-l {
+    width: 499px;
+    height: 160px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    gap: 0px;
+    opacity: 0.8px;
+    color: rgb(172, 172, 172);
+}

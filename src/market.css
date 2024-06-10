@@ -1,0 +1,194 @@
+.market-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #edefff;
+  padding-top: 200px;
+}
+
+.first-m {
+  width: 977px;
+  height: 128px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 64px;
+  text-align: center;
+}
+
+.card-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  padding: 3%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: baseline;
+  gap: 10%;
+}
+
+.card-flex-child {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 28%;
+}
+.card-flex-child2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 28%;
+  margin-top: 50px;
+}
+
+.card-flex-p {
+  width: 100%;
+  height: 68px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  text-align: left;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%; /* Ensure it takes the full width of the parent */
+  margin-top: 10px; /* Adjust as needed for spacing */
+  justify-content: flex-start; /* Align items to the left */
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the left */
+  width: calc(50% - 10px);
+  box-sizing: border-box;
+}
+
+.detailed-card {
+  width: 60%;
+  align-items: flex-start; /* Align items to the start */
+  justify-content: space-between;
+  background: #FFFFFF;
+  height: 224px;
+  gap: 0px;
+  border-radius: 7px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px; /* Add padding to provide space for the header */
+}
+
+.detailed-header {
+  width: 100%; /* Take full width */
+  height: 24px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23.78px;
+  text-align: left;
+  margin: 0; /* Remove any default margin */
+}
+
+.detailed-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detailed-icon-c {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  gap: 40px;
+}
+
+.d-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; 
+  height: 50px; 
+  padding: 10px; 
+  gap: 0px;
+  border-radius: 50%; 
+  background: #F6F6F6;
+}
+
+.d-icon-container img {
+  width: 20px;
+  height: 20px;
+}
+
+.d-icon-p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  width: 81px;
+  height: 36px;
+  gap: 0px;
+  opacity: 0px;
+  margin-left: 10px;
+}
+
+.show{
+  display: block;
+font-size: 22px;
+font-weight: 500;
+line-height: 18px;
+text-align: left;
+
+}
+.none{
+  display: none;
+}
+.action-container{
+  width: 90%;
+  padding: 0 5%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.action-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.action-button{
+  background: black;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  border: none;
+  gap: 10px;
+}
+.action-button img{
+  width: 15px;
+  padding: 10px;
+}

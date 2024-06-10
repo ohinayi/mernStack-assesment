@@ -1,0 +1,73 @@
+.navbar-container{
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    left: 10%;
+    padding: 0 10px;
+    border-radius: 20px;
+    background: var(--nav-background);
+    box-shadow: 0px 15px 25px 0px var(--nav-shadow);
+
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    color: var(--nav-text);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: sans-serif;
+}
+.vector{
+    width: 20px;
+    height: 20px;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.nav-link{
+    color: var(--nav-text);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    
+}
+.nav-link:hover{
+    text-decoration: underline;
+}
+.actions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.login{
+    color: var(--nav-text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+.login:hover{
+    text-decoration: underline;
+}
+.join{
+    width: 102px;
+    height: 43px;
+    border-radius: 16px;
+    background: var(--nav-text);
+    border: none;
+}
+@media (max-width: 768px) {
+    .navbar-container{
+        display: none;
+    }
+}
