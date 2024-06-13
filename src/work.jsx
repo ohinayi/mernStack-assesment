@@ -24,18 +24,18 @@ const Work = () => {
       <div className="job-frame">
       <ToggleSwitch />
           <ul>
-            <li>djsjsjsj</li>
-            <li>djsjsjsj</li>
-            <li>djsjsjsj</li>
-            <li>djsjsjsj</li>
-            <li>djsjsjsj</li>
-            <li>djsjsjsj</li>
-            <li>djsjsjsj</li>
-            <li>djsjsjsj</li>
-            <li>djsjsjsj</li>
-            <li>djsjsjsj</li>
-            <li>djsjsjsj</li>
-            <li>djsjsjsj</li>
+            <li>Python Developer</li>
+            <li>Shopify Developer</li>
+            <li>Shopify Developer</li>
+            <li>Full Stack Developer</li>
+            <li>Data Scientist</li>
+            <li>Front End Developer</li>
+            <li>Shopify Developer</li>
+            <li>Python Developer</li>
+            <li>Shopify Developer</li>
+            <li>Shopify Developer</li>
+            <li>Full Stack Developer</li>
+            <li>Explore More ...</li>
           </ul>
       </div>
     </div>

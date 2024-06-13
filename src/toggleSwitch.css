@@ -1,60 +1,108 @@
 .toggle-switch {
-    display: flex;
-    position: relative;
-    width: 400px; /* Increased width */
-    margin: 20px auto; /* Centering the switch */
+  display: flex;
+  position: relative;
+  width: 400px;
+  margin: 20px auto;
+}
+
+.toggle-option {
+  padding: 15px 20px;
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+  background-color: #d3d3d3;
+  color: black;
+  transition: background-color 0.3s, color 0.3s, border-radius 0.3s, z-index 0.3s;
+  position: relative;
+  z-index: 1;
+  border-radius: 25px;
+}
+
+.toggle-option.active {
+  background-color: #c1f4c5;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 23.78px;
+  text-align: center;
+  color: black;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.it-development.active {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-right: -50px;
+}
+
+.design-and-creative.active {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin-left: -50px;
+}
+
+.it-development:not(.active) {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  z-index: 0;
+}
+
+.design-and-creative:not(.active) {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .toggle-switch {
+    width: 100%;
   }
-  
+
   .toggle-option {
-    padding: 15px 20px; /* Reduced padding for closer spacing */
-    cursor: pointer;
-    flex: 1;
-    text-align: center;
-    background-color: #d3d3d3;
-    color: black;
-    transition: background-color 0.3s, color 0.3s, border-radius 0.3s, z-index 0.3s;
-    position: relative;
-    z-index: 1;
-    border-radius: 25px; /* Default border radius */
+    padding: 10px 15px;
+    font-size: 14px;
   }
-  
-  
+
   .toggle-option.active {
-    background-color: #c1f4c5;
-    color: black;
-    z-index: 2; /* Bring active element to the front */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow to emphasize elevation */
+    font-size: 14px;
+    font-weight: 600;
   }
-  
-  .it-development.active {
-    border-top-left-radius: 25px; /* Curvy edge for the first option */
-    border-bottom-left-radius: 25px;
-    border-top-right-radius: 25px; /* Retain radius for better overlap illusion */
-    border-bottom-right-radius: 25px;
-    margin-right: -50px; /* Overlapping effect */
+
+  .it-development.active, .design-and-creative.active {
+    margin-right: -30px;
+    margin-left: -30px;
   }
-  
-  .design-and-creative.active {
-    border-top-right-radius: 25px; /* Curvy edge for the second option */
-    border-bottom-right-radius: 25px;
-    border-top-left-radius: 25px; /* Retain radius for better overlap illusion */
-    border-bottom-left-radius: 25px;
-    margin-left: -50px; /* Overlapping effect */
+}
+
+@media (max-width: 480px) {
+  .toggle-switch {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
-  
-  .it-development:not(.active) {
-    border-top-left-radius: 25px; /* Retain full radius when not active */
-    border-bottom-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    z-index: 0;
+
+  .toggle-option {
+    padding: 10px 20px;
+    margin: 5px 0;
+    width: 90%;
   }
-  
-  .design-and-creative:not(.active) {
-    border-top-right-radius: 25px; /* Retain full radius when not active */
-    border-bottom-right-radius: 25px;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    z-index: 0;
+
+  .toggle-option.active {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px 0;
   }
-  
+
+  .it-development.active, .design-and-creative.active {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

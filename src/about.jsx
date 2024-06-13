@@ -41,7 +41,13 @@ const About = () => {
                 <span>{item.step}</span>
               </div>
               {item.description && (
-                <div className="Astep-description"> <div className='whitePlay'><img src={whitePlay} alt="whitePlay" className='w' /></div>{item.description}</div>
+                <div className="Astep-description">
+                   <div className='whitePlay'>
+                  <img src={whitePlay} alt="whitePlay" className='w' />
+                  </div>
+                <div className='description-text'>
+                {item.description}</div>
+                </div>
               )}
             </div>
           ))}

@@ -38,6 +38,7 @@
   flex-wrap: wrap;
   width: 28%;
 }
+
 .card-flex-child2 {
   display: flex;
   flex-direction: column;
@@ -61,9 +62,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  width: 100%; /* Ensure it takes the full width of the parent */
-  margin-top: 10px; /* Adjust as needed for spacing */
-  justify-content: flex-start; /* Align items to the left */
+  width: 100%;
+  margin-top: 10px;
+  justify-content: flex-start;
 }
 
 .icon {
@@ -71,14 +72,13 @@
   flex-direction: row;
   gap: 10px;
   align-items: center;
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: flex-start;
   width: calc(50% - 10px);
   box-sizing: border-box;
 }
 
 .detailed-card {
-  width: 60%;
-  align-items: flex-start; /* Align items to the start */
+  align-items: flex-start;
   justify-content: space-between;
   background: #FFFFFF;
   height: 224px;
@@ -88,11 +88,11 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 10px; /* Add padding to provide space for the header */
+  padding: 10px;
 }
 
 .detailed-header {
-  width: 100%; /* Take full width */
+  width: 100%;
   height: 24px;
   gap: 0px;
   opacity: 0px;
@@ -100,7 +100,7 @@
   font-weight: 500;
   line-height: 23.78px;
   text-align: left;
-  margin: 0; /* Remove any default margin */
+  margin: 0;
 }
 
 .detailed-icons {
@@ -113,7 +113,7 @@
 .detailed-icon-c {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   gap: 40px;
 }
 
@@ -121,11 +121,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px; 
-  height: 50px; 
-  padding: 10px; 
+  width: 50px;
+  height: 50px;
+  padding: 10px;
   gap: 0px;
-  border-radius: 50%; 
+  border-radius: 50%;
   background: #F6F6F6;
 }
 
@@ -146,18 +146,19 @@
   margin-left: 10px;
 }
 
-.show{
+.show {
   display: block;
-font-size: 22px;
-font-weight: 500;
-line-height: 18px;
-text-align: left;
-
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
 }
-.none{
+
+.none {
   display: none;
 }
-.action-container{
+
+.action-container {
   width: 90%;
   padding: 0 5%;
   height: fit-content;
@@ -168,14 +169,16 @@ text-align: left;
   justify-content: space-between;
   margin-bottom: 30px;
 }
-.action-div{
+
+.action-div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
-.action-button{
+
+.action-button {
   background: black;
   width: fit-content;
   align-items: center;
@@ -188,7 +191,75 @@ text-align: left;
   border: none;
   gap: 10px;
 }
-.action-button img{
+
+.action-button img {
   width: 15px;
   padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .first-m {
+    width: 90%;
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .card-flex {
+    gap: 5%;
+  }
+
+  .card-flex-child,
+  .card-flex-child2 {
+    width: 45%;
+    margin-top: 20px;
+  }
+
+  .icons-container {
+    justify-content: center;
+  }
+
+  .icon {
+    width: calc(50% - 5px);
+  }
+
+  .detailed-card {
+    height: auto;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .first-m {
+    width: 100%;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .card-flex {
+    gap: 2%;
+    padding: 5%;
+  }
+
+  .card-flex-child,
+  .card-flex-child2 {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .icons-container {
+    justify-content: center;
+  }
+
+  .icon {
+    width: 100%;
+  }
+
+  .detailed-card {
+    height: auto;
+    padding: 20px;
+  }
+
+  .detailed-icon-c {
+    gap: 20px;
+  }
 }

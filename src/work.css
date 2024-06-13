@@ -15,7 +15,6 @@
   line-height: 64px;
   text-align: center;
   margin-bottom: 0;
-  /* Reduce bottom margin */
 }
 
 .second-p {
@@ -27,7 +26,6 @@
   text-align: center;
   color: #202229;
   margin-bottom: 10px;
-  /* Reduce bottom margin */
 }
 
 .input-container {
@@ -41,7 +39,6 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  /* Reduce bottom margin */
 }
 
 .work-input {
@@ -77,7 +74,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-   width: 850px;
+  width: 850px;
   height: fit-content;
   border-radius: 15px;
   background: #F8F8F8;
@@ -87,7 +84,7 @@
 .job-frame ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; 
+  gap: 10px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -111,6 +108,40 @@
   }
 
   .input-container {
+    width: 100%;
+  }
+
+  .work-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .job-frame {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .job-frame li {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .first-p {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .second-p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .job-frame {
+    padding: 10px;
+  }
+
+  .job-frame li {
     width: 100%;
   }
 }

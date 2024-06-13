@@ -12,6 +12,9 @@
     box-shadow: 0px 15px 25px 0px var(--nav-shadow);
 
 }
+.nav-dropDown{
+    display: none;
+}
 .logo{
     display: flex;
     flex-direction: row;
@@ -65,9 +68,56 @@
     border-radius: 16px;
     background: var(--nav-text);
     border: none;
+    transition: all 1s ease;
+}
+.bars{
+    display: none;
+}
+.join:hover{
+    background: aliceblue;
 }
 @media (max-width: 768px) {
+    .scaff {
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        z-index: 11; /* Ensure it is behind the nav but above other content */
+        background: rgba(0, 28, 80, 0.8) ;
+        top: 0;
+        left: 0;
+    }
+
+    .nav-dropDown {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        gap: 10px;
+        align-items:flex-end;
+        padding: 10px;
+        width: 40%;
+        height: 100vh;
+        background: rgba(0, 14, 39, 0.904);
+        color: white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 15; /* Ensure it is above the scaff */
+    }
+    .D-link{
+        color: white;
+    }
+    .D-link:hover{
+        text-decoration: underline;
+    }
     .navbar-container{
         display: none;
+    }
+    .bars{
+        display: block;
+        position: absolute;
+        top: 3%;
+        right: 20px;
     }
 }
